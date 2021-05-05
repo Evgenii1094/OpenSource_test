@@ -1,0 +1,65 @@
+header
+  background-color: $bg-color
+  img
+    display: block
+    margin: 0 auto
+    padding-bottom: 43px
+
+.main
+  @include flex
+  padding: 70px 0 156px
+  position: relative
+
+.header
+  h1
+    text-shadow: 3px 4px 0 rgba(10, 12, 12, .1)
+    color: #ffffff
+    font-size: 100px
+    font-weight: 800
+    line-height: 0.8em
+  h2
+    text-shadow: 3px 4px 0 rgba(10, 12, 12, .1)
+    color: #ffffff
+    font-weight: 400
+    font-size: 54px
+  .header__text
+    text-shadow: 2px 4px 0 rgba(10, 12, 12, .1)
+    color: #ffffff
+    font-weight: 400
+    font-size: 34px
+    padding-bottom: 33px
+    line-height: 0.7em
+  hr
+    width: 245px
+    margin-bottom: 18px
+  a
+    text-shadow: 2px 3px 0 rgba(10, 12, 12, .1)
+    color: #ffffff  
+    font-weight: 400
+    font-style: italic
+    font-size: 18px
+
+.header__right
+  background-color: rgba(0, 0, 0, .2)
+  width: 440px
+  height: 85px 
+  position: absolute
+  top: 80px
+  right: 330px
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: -200px
+    transform: rotate(120deg)
+    width: 430px
+    height: 60px
+    background-color: $bg-color
+  &_text
+    text-shadow: 2px 3px 0 rgba(10, 12, 12, .1)
+    color: #ffffff
+    font-weight: 600
+    font-size: 18px
+    width: 275px
+    padding: 20px 0 20px 0
+    text-align: right

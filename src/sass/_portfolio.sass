@@ -1,0 +1,42 @@
+.portfolio__title
+  padding: 65px 0 50px
+  
+.tab
+  &__link
+    @include flex
+    width: 450px
+    margin: 0 auto
+    list-style-type: none
+    color: #959595
+    font-weight: 400
+    font-size: 16px
+    margin-bottom: 50px
+    li:hover
+      cursor: pointer
+  &__active
+    color: $title-color
+  &__container
+    display: flex
+    flex-wrap: wrap
+    &_item
+      width: 25%
+      height: 250px
+      padding: 67px 83px 74px
+      text-align: center
+      .tab__inner
+        display: none
+      .tab__container_active
+        display: block
+    &_item:nth-child(1), &_item:nth-child(3), &_item:nth-child(6), &_item:nth-child(8)
+      background-color: $bg-color
+    &_item:nth-child(2), &_item:nth-child(4), &_item:nth-child(5), &_item:nth-child(7)
+      background-color: $bg-sm-color
+    &_text
+      color: #ffffff
+      font-weight: 600
+      font-size: 18px
+      padding: 15px 0 12px
+    &_descr
+      color: #ffffff
+      font-weight: 400
+      font-size: 16px

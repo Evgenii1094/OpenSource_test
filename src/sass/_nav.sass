@@ -1,0 +1,28 @@
+nav
+  @include flex
+  align-items: center
+  padding: 20px 0
+
+.nav
+  &__logo
+    transition: 0.3s ease-in-out 
+  &__logo:hover
+    transform: scale(1.2)
+  &__menu
+    display: flex
+    list-style-type: none
+    li
+      margin: 0 20px
+      a
+        color: $text-grey
+        font-weight: 400
+        font-size: 14px 
+        &:hover
+          color: $title-color
+          transition: 0.3s ease-in-out 
+  &__icon
+    margin: 0 7px
+    transition: 0.3s ease-in-out
+    &:hover
+      filter: invert(1)
+

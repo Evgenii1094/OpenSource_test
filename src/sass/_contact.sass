@@ -1,0 +1,113 @@
+.contact__title
+  padding: 60px 0 55px
+  
+.contact
+  background-color: $bg-color
+  padding: 148px 0 262px
+  &__logo
+    position: relative
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #fff
+    width: 165px
+    height: 65px
+    &::after
+      content: ''
+      position: absolute
+      bottom: -20px
+      left: 50%
+      transform: translate(-50%, -50%)
+      border-left: 15px solid transparent
+      border-right: 15px solid transparent
+      border-top: 15px solid #fff
+
+.form
+  background-color: $bg-grey
+  position: relative
+  min-height: 600px
+  &__wrapper
+    @include flex
+    padding: 47px 50px
+    background-color: #fff
+    position: absolute
+    bottom: 65px
+    left: 50%
+    transform: translate(-50%)
+  &__element
+    display: flex
+    flex-direction: column
+    form
+      display: flex
+      flex-direction: column
+      label
+        color: $title-color
+        font-weight: 400
+        font-size: 14px
+        padding-bottom: 11px
+      input
+        width: 506px
+        height: 46px
+        border: 1px solid #e2e2e2
+        margin-bottom: 26px
+        outline: none
+        font-weight: 400
+        font-size: 16px
+        color: $title-color
+        padding-left: 10px
+      textarea
+        resize: none
+        border: 1px solid #e2e2e2
+        height: 200px
+        font-weight: 400
+        font-size: 16px
+        color: $title-color
+        margin-bottom: 30px
+        outline: none
+        padding: 10px
+      button
+        color: #ffffff
+        font-weight: 400
+        font-size: 14px
+        width: 90px
+        height: 46px
+        background-color: $bg-color
+        border: none
+        outline: none
+        transition: 0.3s ease-in-out
+        &:hover
+          background-color: #62c5b2
+          cursor: pointer
+    &_text
+      color: #898989
+      font-weight: 400
+      font-size: 14px
+      padding-bottom: 25px
+    h4
+      color: $title-color
+      font-weight: 600
+      font-size: 23px
+      padding-bottom: 32px
+    &_item
+      display: flex
+      align-items: center
+    &_info
+      margin: 20px 10px 15px
+      color: $title-color
+      font-weight: 400
+      font-size: 18px
+      a
+        color: $title-color
+        font-weight: 400
+        font-size: 18px
+      a:hover
+        text-decoration: underline
+    &_info:last-child
+      display: flex
+      flex-direction: column
+      align-items: baseline
+    &_info:first-child
+      width: 42px
+  &__element:last-child
+    width: 275px

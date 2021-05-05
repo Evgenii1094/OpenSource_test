@@ -1,0 +1,63 @@
+.team__title
+  padding-top: 45px
+  p
+    padding-bottom: 22px
+  
+.team
+  background-color: $bg-grey
+  margin-top: 15px
+  position: relative
+  z-index: 5
+  &::before
+    content: ''
+    position: absolute
+    top: -6%
+    left: 50%
+    transform: translate(-50%, -50%)
+    border: 32px solid transparent
+    border-bottom: 33px solid $bg-grey
+  .slider
+    padding: 56px 0 77px
+    position: relative
+    &__element
+      width: 300px
+      border-bottom: 4px solid $bg-color
+      &_item:first-child
+        width: 280px
+        height: 225px
+        background-color: $bg-color
+      &_item:last-child
+        background-color: #fff
+        padding: 18px 20px 20px 20px
+        width: 280px
+        @include flex
+        .slider__content
+          &_name
+            color: $title-color
+            font-weight: 400
+            font-size: 18px
+          &_position
+            color: #8c8c8c
+            font-weight: 400
+            font-size: 14px
+
+.swiper-container 
+  width: 900px
+  height: 420px
+
+
+.swiper-pagination-bullet-active 
+  background-color: $bg-color
+
+.swiper-pagination-bullet
+  width: 10px
+  height: 10px
+
+.swiper-button-next:after, .swiper-button-prev:after
+  display: none
+
+.swiper-button-next
+  right: 20px
+
+.swiper-button-prev
+  left: 0

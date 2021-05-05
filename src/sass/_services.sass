@@ -1,0 +1,33 @@
+.sercices__title
+  padding: 45px 0 50px
+  p
+    padding-bottom: 25px
+  
+.services
+  @include flex
+  align-items: center
+  flex-wrap: wrap
+  &__inner
+    width: 295px
+    @include flex
+    margin-bottom: 45px
+    &_item:first-child
+      padding-right: 26px
+    &_item:last-child
+      width: 205px
+    &_item
+      h4
+        color: $title-color
+        font-weight: 400
+        font-size: 18px
+        padding-bottom: 13px
+        span
+          color: $bg-color
+      hr
+        background-color: #d8d8d8
+        width: 80px
+      p
+        color: $text-item-color
+        font-weight: 400
+        font-size: 13px
+        padding-top: 28px
